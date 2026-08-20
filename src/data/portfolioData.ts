@@ -180,8 +180,8 @@ export const CERTIFICATIONS_DATA: Certification[] = [
   },
   {
     title: 'Data Structures & Algorithms – Problem Solving with C/C++',
-    issuer: 'Leetcode',
-    detail: 'Problem Solving with C/C++ (Leetcode 100+ problem solved)',
+    issuer: 'LeetCode',
+    detail: 'Problem Solving with C/C++ (LeetCode 300+ problems solved)',
   },
   {
     title: 'Excel for Data Analysis',
