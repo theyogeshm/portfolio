@@ -66,7 +66,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           <div className="flex items-center space-x-2">
             <a
-              href={`${import.meta.env.BASE_URL}Yogesh_Kumar_Resume.pdf`}
+              href="./Yogesh_Kumar_Resume.pdf"
               download="Yogesh_Kumar_Resume.pdf"
               className="inline-flex items-center px-3 py-1.5 border border-zinc-800 text-xs font-semibold text-slate-200 hover:text-red-300 hover:border-red-500/70 hover:bg-red-950/30 transition-all rounded-md cursor-pointer"
             >
@@ -75,7 +75,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             </a>
 
             <a
-              href={`${import.meta.env.BASE_URL}Yogesh_Kumar_Resume.pdf`}
+              href="./Yogesh_Kumar_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-3 py-1.5 border border-zinc-800 text-xs font-semibold text-slate-200 hover:text-red-300 hover:border-red-500/70 hover:bg-red-950/30 transition-all rounded-md cursor-pointer"
@@ -133,7 +133,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           /* PDF Viewer Embed */
           <div className="p-2 sm:p-3 bg-[#060506] flex-1 w-full h-full flex flex-col">
             <iframe
-              src={`${import.meta.env.BASE_URL}Yogesh_Kumar_Resume.pdf#toolbar=1&navpanes=0&view=FitH`}
+              src="./Yogesh_Kumar_Resume.pdf#toolbar=1&navpanes=0&view=FitH"
               title="Yogesh Kumar Resume PDF"
               className="w-full h-full min-h-[75vh] rounded-lg border border-zinc-800 shadow-lg bg-white"
             />

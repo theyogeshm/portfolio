@@ -13,7 +13,7 @@ export const PERSONAL_INFO = {
   github: 'https://github.com/theyogeshm',
   linkedin: 'https://linkedin.com/in/theyogeshm',
   status: 'Open to summer software engineering & computer vision research internships.',
-  profileImage: `${import.meta.env.BASE_URL}profile.jpg`,
+  profileImage: './profile.jpg',
   architectureImage:
     'https://lh3.googleusercontent.com/aida-public/AB6AXuBgAsjZM_o8hyqACoX11wZY_czdyV6cZpM4FjHN9Rj2I6zOjql2qCVwa72uBuUxMiJKcTRMgZpZLQoy22oxnbCPfnbZwdrYLPbH7OM78OXSh6XdDyocsZ2MUtPZqjSDFlICFOZFDZpSg4c5xipUqWVWLzyugj3KavEXC5aLEQoewBWV6TutrCFTAEm3_IcWC3wtcEipnJ3xjCW1-0xEtAPkZcjcnZMhz4E26XWXZC43T99_812KCiCr',
 };
@@ -74,7 +74,7 @@ export const PROJECTS: Project[] = [
     id: 'attendancehub',
     title: 'AttendanceHub',
     status: 'Deployed',
-    image: `${import.meta.env.BASE_URL}projects/attendancehub.png`,
+    image: './projects/attendancehub.png',
     demoUrl: 'https://www.attendancehub.me/',
     description:
       'Real-time subject-wise attendance tracking platform with bunk predictor, timetable engine & resource repository for university students.',
@@ -99,7 +99,7 @@ export const PROJECTS: Project[] = [
     id: 'formsaathi',
     title: 'FormSaathi',
     status: 'Deployed',
-    image: `${import.meta.env.BASE_URL}projects/formsaathi.png`,
+    image: './projects/formsaathi.png',
     demoUrl: 'https://formsaathi.onrender.com/',
     description:
       'An AI-powered banking platform that simplifies complex banking form fill-ups in under 30 seconds using Gemini Vision AI and multilingual voice assistance.',
@@ -124,7 +124,7 @@ export const PROJECTS: Project[] = [
     id: 'campusloot',
     title: 'CampusLoot',
     status: 'Deployed',
-    image: `${import.meta.env.BASE_URL}projects/campusloot.png`,
+    image: './projects/campusloot.png',
     demoUrl: 'https://campusloot-1.onrender.com/',
     description:
       'A centralized platform for students to discover and track internships, scholarships, and hackathons in one place with fast filtering and search.',
@@ -149,7 +149,7 @@ export const PROJECTS: Project[] = [
     id: 'atms',
     title: 'Adaptive Traffic Management System (ATMS)',
     status: 'Deployed',
-    image: `${import.meta.env.BASE_URL}projects/atms.png`,
+    image: './projects/atms.png',
     repoUrl: 'https://github.com/theyogeshm/TrafficControl.git',
     description:
       'Built an adaptive traffic management system, combining computer vision, machine learning, and real-time traffic simulation.',
