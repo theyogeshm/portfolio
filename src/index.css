@@ -1,0 +1,284 @@
+@import "tailwindcss";
+
+:root {
+  --border-clr: #2C181D;
+  --accent: #EF4444;
+  --accent-glow: rgba(239, 68, 68, 0.25);
+  --card-bg: #0E0A0C;
+}
+
+@layer base {
+  html {
+    font-family: 'Arimo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    background-color: #060506;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+.geometric-grid {
+  background-image: radial-gradient(rgba(239, 68, 68, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.active-glow {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.22);
+}
+
+.active-glow-sm {
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+}
+
+.active-glow-lg {
+  box-shadow: 0 0 35px rgba(239, 68, 68, 0.28);
+}
+
+/* Custom scrollbar matching Geometric Crimson & Black palette */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060506;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A171B;
+  border-radius: 4px;
+  border: 1px solid #120D0F;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EF4444;
+}
+
+/* ============================================================
+   LIGHT MODE OVERRIDES
+   ============================================================ */
+html.light {
+  color-scheme: light;
+  background-color: #F8FAFC !important;
+}
+
+html.light body {
+  background-color: #F8FAFC !important;
+  color: #1E293B !important;
+}
+
+/* ----- Navigation ----- */
+html.light #main-navbar {
+  background-color: rgba(255, 255, 255, 0.97) !important;
+  border-color: #E2E8F0 !important;
+}
+
+html.light #mobile-nav-menu {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* ----- Background grid ----- */
+html.light .geometric-grid {
+  background-image: radial-gradient(rgba(220, 38, 38, 0.12) 1px, transparent 1px) !important;
+}
+
+/* ----- Primary card surfaces → white ----- */
+html.light div[id^="project-card-"],
+html.light div[id^="skill-category-"],
+html.light div[id^="cert-card-"],
+html.light div[id^="extra-card-"],
+html.light #hero-profile-card,
+html.light #about-bio-card,
+html.light #about-edu-card,
+html.light #about-education-card,
+html.light #contact-info-card,
+html.light #contact-form-card,
+html.light #project-modal-card,
+html.light #resume-modal-card {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.08) !important;
+}
+
+html.light #contact-internship-card {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* ----- Background color class overrides (with opacity support) ----- */
+
+/* Darkest bg (page root, code blocks) → very light */
+html.light .bg-\[\#060506\],
+html.light [class*="bg-[#060506]"] {
+  background-color: #F8FAFC !important;
+}
+
+/* Slight elevation (navbar, footer bars, sidebar) → off-white */
+html.light .bg-\[\#0A0708\],
+html.light [class*="bg-[#0A0708]"] {
+  background-color: #F1F5F9 !important;
+}
+
+/* Card surface → white */
+html.light .bg-\[\#0E0A0C\],
+html.light [class*="bg-[#0E0A0C]"] {
+  background-color: #FFFFFF !important;
+}
+
+/* Nested / inner card (Academic cards, Benchmarks, Specialization, etc.) → soft crisp light card */
+html.light .bg-\[\#140C0E\],
+html.light .bg-\[\#160B0E\],
+html.light [class*="bg-[#140C0E]"],
+html.light [class*="bg-[#160B0E]"] {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Footer */
+html.light #main-footer,
+html.light [class*="bg-[#0A0708]"] {
+  background-color: #F1F5F9 !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* ----- Typography ----- */
+html.light .text-white {
+  color: #0F172A !important;
+}
+
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #1E293B !important;
+}
+
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light .text-slate-500 {
+  color: #64748B !important;
+}
+
+html.light .text-slate-600 {
+  color: #94A3B8 !important;
+}
+
+html.light .text-red-300 {
+  color: #DC2626 !important;
+}
+
+/* ----- Borders ----- */
+html.light .border-zinc-800,
+html.light [class*="border-zinc-800"],
+html.light [class*="border-red-950"] {
+  border-color: #E2E8F0 !important;
+}
+
+html.light section {
+  border-color: #E2E8F0 !important;
+}
+
+/* ----- Form inputs ----- */
+html.light input[type="text"],
+html.light input[type="email"],
+html.light textarea {
+  background-color: #F8FAFC !important;
+  border-color: #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+html.light input[type="text"]::placeholder,
+html.light input[type="email"]::placeholder,
+html.light textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+html.light input[type="text"]:focus,
+html.light input[type="email"]:focus,
+html.light textarea:focus {
+  border-color: #EF4444 !important;
+  background-color: #FFFFFF !important;
+}
+
+/* ----- Red accent pills/badges → solid crimson in light mode ----- */
+html.light .bg-red-950\/40 {
+  background-color: #DC2626 !important;
+  border-color: #DC2626 !important;
+}
+
+/* Force all text inside the pill to white */
+html.light .bg-red-950\/40,
+html.light .bg-red-950\/40 * {
+  color: #FFFFFF !important;
+}
+
+/* Keep the pulse dot white inside a red pill */
+html.light .bg-red-950\/40 .bg-red-500 {
+  background-color: rgba(255,255,255,0.8) !important;
+}
+
+/* ----- Hover states ----- */
+html.light .hover\:bg-zinc-800\/60:hover,
+html.light .hover\:bg-red-950\/30:hover {
+  background-color: rgba(239, 68, 68, 0.07) !important;
+}
+
+/* ----- Navbar nav-links in light mode ----- */
+html.light a.text-slate-400 {
+  color: #475569 !important;
+}
+
+/* ----- Scrollbar ----- */
+html.light ::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border: 1px solid #E2E8F0;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #EF4444;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  #main-navbar,
+  #main-footer,
+  #hero-section,
+  #about,
+  #skills,
+  #projects,
+  #certifications,
+  #contact,
+  #resume-print-btn,
+  #resume-close-btn,
+  .geometric-grid {
+    display: none !important;
+  }
+  #resume-modal-backdrop {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+  #resume-modal-card {
+    border: none !important;
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    max-height: none !important;
+  }
+  #resume-modal-card * {
+    color: #111111 !important;
+    border-color: #cccccc !important;
+  }
+}
